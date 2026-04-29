@@ -15,16 +15,37 @@ using official Bureau of Labor Statistics (BLS) data.
 ![Correlation Heatmap](data/processed/chart4_correlation.png)
 
 ## Key Insights
-- **COVID impact was historic** — unemployment spiked to 14.8% in April 2020,
-  the highest rate since the Great Depression, with 22 million jobs lost in 8 weeks
-- **Recovery was faster than expected** — unemployment fell back to 3.7% by 2024,
-  driven by $5 trillion in government stimulus and strong consumer demand
-- **Labor force participation never fully recovered** — the participation rate remains
-  below its pre-COVID level of 63.3%, suggesting ~3 million Americans have not
-  returned to the workforce
-- **Unemployment and participation are strongly linked** — a -0.9 correlation confirms
-  that when jobs disappear, workers exit the labor force entirely rather than
-  continuing to search
+
+### COVID Impact
+- Unemployment spiked from **3.5% to 14.8%** in just 2 months (Feb–Apr 2020)
+  — the fastest job loss in U.S. history, with 22 million jobs wiped out
+- The 2020 yearly average of 8.1% is misleading — January was 3.5% 
+  and April was 14.8%, showing how averages can hide the real story
+
+### Recovery
+- Unemployment recovered to pre-COVID levels by 2022, faster than 
+  most economists predicted, driven by $5 trillion in government stimulus
+- Nonfarm payrolls hit an all-time high of 158,316 thousand in 2024, 
+  surpassing pre-COVID levels
+
+### Structural Changes
+- Labor force participation **never fully recovered** to its pre-COVID 
+  level of 63.3%, suggesting ~3 million Americans permanently left the workforce
+- A **-0.9 correlation** between unemployment and participation confirms 
+  that during downturns, workers stop looking entirely — meaning official 
+  unemployment figures understate the true picture
+
+### 2024 Warning Signal
+- Unemployment crept up from 3.7% to 4.2% through 2024 — a trend 
+  worth monitoring as a potential early signal of economic slowdown
+
+## What I Learned
+- Real-world government APIs require more cleaning than expected — 
+  annual averages needed to be filtered out from monthly data
+- Averages can be deeply misleading for volatile data — 
+  the 2020 yearly average of 8.1% hides the true crisis magnitude
+- Correlation alone doesn't tell the full story — the -0.9 figure 
+  only makes sense when you understand the underlying human behavior
 
 ## Tech Stack
 - **Python** — data collection, cleaning, analysis
